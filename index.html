@@ -63,15 +63,13 @@
                     tristique elit commodo. Rhoncus dictumst ornare tortor elit facilisis. Faucibus justo, elementum
                     tempor magna faucibus nulla. Ut faucibus enim libero iaculis et, suspendisse. Nunc, risus dis eu
                     augue eu. Leo sit consectetur nisl volutpat pellentesque nibh suscipit. Ac dolor pharetra mattis dui
-                    ut adipiscing viverra leo a. Quam pharetra, nisl consectetur malesuada arcu, maecenas.
-                    Mi dictumst vitae, ante neque quisque a vel. </p>
+                    ut adipiscing viverra leo a. </p>
                 <p>Tellus, viverra vestibulum integer non augue aliquet dui, enim nisl. Adipiscing id
                     pretium aenean
                     sodales id velit. Ut imperdiet ante sed ac vitae enim est id aliquam. Integer tellus malesuada
                     pellentesque nunc, ac scelerisque iaculis nam. Sed pellentesque faucibus quam porta consectetur.
                     Eros pharetra, nulla feugiat pulvinar viverra. Iaculis rhoncus, morbi sapien, laoreet non morbi diam
-                    sed ipsum. Diam odio cras orci blandit porttitor vitae ut sit elementum.Nunc convallis amet
-                    consectetur amet ut eu ornare ante.</p>
+                    sed ipsum.</p>
             </div>
         </div>
     </section>
@@ -121,49 +119,62 @@
                 sed donec vehicula. Nisl ullamcorper ut quam in diam. Quis diam hendrerit congue iaculis in id. Porta in
                 facilisis enim nibh. Quis leo eu congue convallis. Nunc enim quam risus lacus cras.</p>
 
-            <div class="gifts__cards">
-                <div class="card">
+            <div id="gifts__cards" class="gifts__cards">
+                <div id="1" class="card">
                     <img src="img/card-avion.png" alt="">
                     <h2>Pasajes de avión</h2>
                     <p>$20000</p>
-                    <button>Regalar</button>
+                    <button data-id="regalo1" class="mostrarGift">Regalar</button>
                 </div>
 
-                <div class="card">
+                <div id="2" class="card">
                     <img src="img/card-excursion.png" alt="">
                     <h2>Excursión</h2>
                     <p>$4000</p>
-                    <button>Regalar</button>
+                    <button data-id="regalo2" class="mostrarGift">Regalar</button>
                 </div>
 
-                <div class="card">
+                <div id="3" class="card">
                     <img src="img/card-cena-romantica.png" alt="">
                     <h2>Cena romántica</h2>
                     <p>$3000</p>
-                    <button>Regalar</button>
+                    <button data-id="regalo3" class="mostrarGift">Regalar</button>
                 </div>
 
-                <div class="card">
+                <div id="4" class="card">
                     <img src="img/card-hospedaje.png" alt="">
                     <h2>Hospedaje</h2>
                     <p>$12000</p>
-                    <button>Regalar</button>
+                    <button data-id="regalo4" class="mostrarGift">Regalar</button>
                 </div>
 
-                <div class="card">
+                <div id="5" class="card">
                     <img src="img/card-aire-libre.png" alt="">
                     <h2>Día al aire librea</h2>
                     <p>$3500</p>
-                    <button>Regalar</button>
+                    <button data-id="regalo5" class="mostrarGift">Regalar</button>
                 </div>
 
-                <div class="card">
+                <div id="6" class="card">
                     <img src="img/card-spa.png" alt="">
                     <h2>Día de spa</h2>
                     <p>$5000</p>
-                    <button>Regalar</button>
+                    <button data-id="regalo6" class="mostrarGift">Regalar</button>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- MODAL -->
+    <section id="modal" class="modal">
+        <div class="modal__content">
+            <h3>Título modal</h3>
+            <p>Precio</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque cupiditate deserunt ad modi non nam
+                vitae
+                iste voluptatem, natus amet esse dolor delectus, facere laboriosam excepturi consequuntur perferendis
+                possimus eligendi.</p>
+            <button>Pagar</button>
         </div>
     </section>
 
@@ -175,6 +186,9 @@
             <img src="img/heart.svg" alt="">
         </div>
     </section>
+
+
+    <script src="js/app.js"></script>
 </body>
 
 </html>

@@ -126,8 +126,8 @@ body {
   background-color: #f0f0e0;
   margin-top: 25vh;
   text-align: center;
-  height: 60vh;
-  max-height: 60vh;
+  height: 80vh;
+  max-height: 80vh;
 }
 
 .rings .rings__container {
@@ -175,7 +175,7 @@ body {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 35%;
           flex: 0 1 35%;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 25px;
   text-align: left;
 }
@@ -336,7 +336,7 @@ body {
   -webkit-box-shadow: -1px 9px 15px 0px rgba(17, 17, 17, 0.05);
   -moz-box-shadow: -1px 9px 15px 0px rgba(17, 17, 17, 0.05);
   width: 448px;
-  min-height: 480px;
+  min-height: 520px;
   margin-top: 6rem;
   position: relative;
 }
@@ -386,6 +386,43 @@ body {
   position: relative;
   right: 8px;
   top: 2.5px;
+}
+
+/* -----MODAL ----- */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.modal .modal__content {
+  background-color: white;
+  width: 50vw;
+  height: 50vh;
+  padding: 3rem;
+}
+
+.modal--show {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 /* -----FOOTER ----- */
@@ -444,5 +481,203 @@ body {
   line-height: 83px;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
+}
+
+/*  -------------MEDIA QUERIES------------ */
+@media (max-width: 1440px) {
+  .rings {
+    background-color: #f0f0e0;
+    margin-top: 25vh;
+    text-align: center;
+    height: 60vh;
+    max-height: 60vh;
+  }
+  .rings .rings__container .rings__texts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 4rem;
+  }
+  .rings .rings__container .rings__texts p {
+    margin-top: 15px;
+  }
+  .rings::after {
+    content: url();
+  }
+  .features {
+    margin-bottom: 50vh;
+    margin-top: 20vh;
+  }
+  .features .features__container {
+    width: 80%;
+    max-width: 1280px;
+    margin: auto;
+  }
+  .features .features__container .feature {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 10vh;
+  }
+  .features .features__container .feature .feature1,
+  .features .features__container .feature .feature2,
+  .features .features__container .feature .feature3 {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 33%;
+            flex: 1 0 33%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .features .features__container .feature .feature1 img,
+  .features .features__container .feature .feature2 img,
+  .features .features__container .feature .feature3 img {
+    width: 20%;
+  }
+  .gifts {
+    margin-top: 20vh;
+  }
+  .gifts .gifts__container {
+    width: 80%;
+    max-width: 1280px;
+    margin: auto;
+  }
+  .gifts .gifts__container h1 {
+    font-weight: bold;
+    font-size: 39px;
+    line-height: 49px;
+    letter-spacing: -0.025em;
+    text-align: center;
+    color: #727955;
+  }
+  .gifts .gifts__container p {
+    margin-top: 5vh;
+    line-height: 25px;
+    color: #000000;
+    text-align: left;
+    padding: 15px;
+  }
+  .gifts .gifts__container .gifts__cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    background-image: url();
+  }
+  .info {
+    margin-top: 25vh;
+  }
+  .info .info__container {
+    max-width: 1280px;
+    width: 90%;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .info .info__container img {
+    -webkit-filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.09));
+            filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.09));
+    border-radius: 15px;
+    width: 100%;
+  }
+  .info .info__container .info__text {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 40%;
+            flex: 1 0 40%;
+  }
+  .rings .rings__container .rings__texts {
+    display: none;
+  }
+  .gifts .gifts__container .gifts__cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .gifts {
+    margin-top: 20vh;
+  }
+  .gifts .gifts__container {
+    width: 80%;
+    max-width: 1280px;
+    margin: auto;
+  }
+  .gifts .gifts__container .gifts__cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .gifts .gifts__container .gifts__cards .card {
+    margin: 0 auto;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
