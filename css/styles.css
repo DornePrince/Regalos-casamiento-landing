@@ -1,0 +1,448 @@
+/* Fuentes */
+/* Colores */
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+.caveat {
+  font-family: "Caveat", cursive;
+}
+
+.quicksand {
+  font-family: "Quicksand", sans-serif;
+}
+
+/* .flowers {
+  height: 100vh;
+  background-image: url(../img/flowers2.jpg);
+  background-repeat: no-repeat;
+  background-position-y: 0vh;
+  background-position-x: 100%;
+  z-index: 1000;
+} */
+/* -----HERO----- */
+.hero {
+  height: 100vh;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../img/flowers.jpg);
+  background-repeat: no-repeat;
+  background-position-y: 38vh;
+}
+
+.hero .hero__container {
+  background-color: transparent;
+}
+
+.hero .hero__container h1 {
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 39px;
+  line-height: 49px;
+  letter-spacing: -0.025em;
+  color: #272727;
+  margin-top: 10px;
+}
+
+.hero .hero__container .couple {
+  color: #727955;
+  font-weight: bold;
+  font-size: 66px;
+  line-height: 83px;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+}
+
+/* -----INFO----- */
+.info {
+  margin-top: 25vh;
+}
+
+.info .info__container {
+  max-width: 1280px;
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info .info__container img {
+  -webkit-filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.09));
+          filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.09));
+  border-radius: 15px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 40%;
+          flex: 1 0 40%;
+}
+
+.info .info__container .info__text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 40%;
+          flex: 1 0 40%;
+  padding: 80px;
+}
+
+.info .info__container .info__text h2 {
+  font-weight: 500;
+  font-size: 31px;
+  line-height: 39px;
+  letter-spacing: -0.025em;
+  color: #727955;
+}
+
+.info .info__container .info__text p {
+  margin-top: 25px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+  color: #272727;
+}
+
+.rings {
+  background-color: #f0f0e0;
+  margin-top: 25vh;
+  text-align: center;
+  height: 60vh;
+  max-height: 60vh;
+}
+
+.rings .rings__container {
+  width: 80%;
+  max-width: 1280px;
+  margin: auto;
+  height: 100%;
+}
+
+.rings .rings__container h3 {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 156.5%;
+  color: #272727;
+  padding-top: 55px;
+}
+
+.rings .rings__container h2 {
+  font-weight: 500;
+  font-size: 31px;
+  line-height: 39px;
+  letter-spacing: -0.025em;
+  color: #727955;
+  padding-top: 1.5rem;
+}
+
+.rings .rings__container .rings__texts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 4rem;
+}
+
+.rings .rings__container .rings__texts p {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 35%;
+          flex: 0 1 35%;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: left;
+}
+
+.rings::after {
+  content: url("../img/rings.png");
+  position: relative;
+  right: -30%;
+  top: -15%;
+}
+
+/* -----BG-IMAGE----- */
+.features {
+  margin-bottom: 20vh;
+  margin-top: 20vh;
+}
+
+.features .features__container {
+  width: 80%;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.features .features__container h2 {
+  font-size: 31px;
+  line-height: 39px;
+  letter-spacing: -0.025em;
+  color: #727955;
+  text-align: center;
+  margin-top: 10vh;
+}
+
+.features .features__container .feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10vh;
+}
+
+.features .features__container .feature .feature1,
+.features .features__container .feature .feature2,
+.features .features__container .feature .feature3 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 33%;
+          flex: 1 0 33%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.features .features__container .feature .feature1 img,
+.features .features__container .feature .feature2 img,
+.features .features__container .feature .feature3 img {
+  width: 25%;
+}
+
+.features .features__container .feature .feature1 h3,
+.features .features__container .feature .feature2 h3,
+.features .features__container .feature .feature3 h3 {
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 156.5%;
+  color: #272727;
+  margin-top: 25px;
+}
+
+.features .features__container .feature .feature1 p,
+.features .features__container .feature .feature2 p,
+.features .features__container .feature .feature3 p {
+  font-size: 16px;
+  line-height: 25px;
+  margin-top: 25px;
+  width: 90%;
+}
+
+/* -----BG-IMAGE ----- */
+.bg-image {
+  width: 100%;
+  max-height: 602px;
+  min-height: 500px;
+  background-image: url(../img/bg-parallax-jpg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* -----GIFTS ----- */
+.gifts {
+  margin-top: 20vh;
+}
+
+.gifts .gifts__container {
+  width: 80%;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.gifts .gifts__container h1 {
+  font-weight: bold;
+  font-size: 39px;
+  line-height: 49px;
+  letter-spacing: -0.025em;
+  text-align: center;
+  color: #727955;
+}
+
+.gifts .gifts__container p {
+  margin-top: 5vh;
+  line-height: 25px;
+  color: #000000;
+  text-align: left;
+  padding: 15px;
+}
+
+.gifts .gifts__container .gifts__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gifts .gifts__container .gifts__cards .card {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50;
+          flex: 0 0 50;
+  box-shadow: -1px 9px 15px 0px rgba(17, 17, 17, 0.05);
+  -webkit-box-shadow: -1px 9px 15px 0px rgba(17, 17, 17, 0.05);
+  -moz-box-shadow: -1px 9px 15px 0px rgba(17, 17, 17, 0.05);
+  width: 448px;
+  min-height: 480px;
+  margin-top: 6rem;
+  position: relative;
+}
+
+.gifts .gifts__container .gifts__cards .card h2 {
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 34px;
+  letter-spacing: 1px;
+  color: #14142b;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+.gifts .gifts__container .gifts__cards .card p {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 34px;
+  letter-spacing: 1px;
+  color: #727955;
+  padding-left: 15px;
+}
+
+.gifts .gifts__container .gifts__cards .card button {
+  padding: 7px 16px;
+  width: 125px;
+  height: 34px;
+  background: #c5bfa3;
+  border-radius: 39px;
+  border: 0;
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.75px;
+  color: #727955;
+  position: relative;
+  left: 65%;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.gifts .gifts__container .gifts__cards .card button::before {
+  content: url("../img/buy.svg");
+  position: relative;
+  right: 8px;
+  top: 2.5px;
+}
+
+/* -----FOOTER ----- */
+.footer {
+  height: 100vh;
+  z-index: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../img/flowers2.jpg);
+  background-repeat: no-repeat;
+  background-position-y: 44vh;
+  background-position-x: 74vw;
+}
+
+.footer .footer__container {
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer .footer__container p {
+  text-align: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 39px;
+  line-height: 49px;
+  letter-spacing: -0.025em;
+  color: #272727;
+  margin-top: 10px;
+}
+
+.footer .footer__container img {
+  margin: 0 auto;
+}
+
+.footer .footer__container .couple {
+  color: #727955;
+  font-weight: bold;
+  font-size: 66px;
+  line-height: 83px;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+}
+/*# sourceMappingURL=styles.css.map */
